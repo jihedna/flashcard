@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.FlashcardsApp">
+
+        <!-- Login Activity, the first screen seen when app is launched -->
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true" />
+
+        <!-- Add Flashcard Activity -->
+        <activity
+            android:name=".view.AddFlashcardActivity"
+            android:exported="true" />
+
+        <!-- Quiz Activity -->
+        <activity
+            android:name=".view.QuizActivity"
+            android:exported="true" />
+
+        <!-- Sign Up Activity -->
+        <activity
+            android:name=".view.SignUpActivity"
+            android:exported="true" />
+
+        <!-- Flashcard List Activity (added here) -->
+        <activity
+            android:name=".view.FlashcardListActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

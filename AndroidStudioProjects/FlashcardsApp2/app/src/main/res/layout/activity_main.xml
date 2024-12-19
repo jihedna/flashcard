@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flashcard_background">
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- View Flashcards Button -->
+    <Button
+        android:id="@+id/buttonViewFlashcards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Flashcards"
+        android:layout_below="@id/buttonLogout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_below="@id/buttonViewFlashcards">
+
+        <TextView
+            android:id="@+id/textViewFlashcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Word"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/buttonFlip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flip Card"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/buttonAddFlashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Flashcard"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/buttonStartQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Quiz"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Flashcards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFlashcards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonViewFlashcards"
+        android:layout_margin="16dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/flashcard_background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewFlashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Word"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="40dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter translation"
+        android:textSize="18sp"
+        android:padding="14dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:padding="14dp"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>
